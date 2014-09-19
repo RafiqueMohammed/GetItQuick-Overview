@@ -32,9 +32,9 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/textbox"
+                android:background="@drawable/round_textbox"
                 android:hint="Enter Your Email ID"
-                android:padding="15dp"/>
+                />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -46,10 +46,10 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/textbox"
+                android:background="@drawable/round_textbox"
 android:layout_marginTop="15dp"
                 android:hint="Enter Your Password"
-                android:padding="15dp"/>
+                />
             <Button
                 android:layout_marginTop="15dp"
                 android:layout_width="match_parent"
@@ -60,7 +60,19 @@ android:textColor="#FFF"
                 android:text="Login"
                 android:textAlignment="center"
                 />
-            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Not yet Registered ?"
+                android:id="@+id/txt_register"
+                android:layout_gravity="right"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:textColor="#ffffff" />
+        </LinearLayout>
 
     </RelativeLayout>
 
