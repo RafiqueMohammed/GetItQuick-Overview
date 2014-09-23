@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/cards"
+    android:gravity="center">
+    <ImageView
+        android:id="@+id/grid_layout_img"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/dates"/>
+    <TextView
+        android:id="@+id/grid_layout_title"
+        android:gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Red Dates"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/grid_layout_price"
+        android:gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#2ecc71"
+        android:text="Rs.150"
+        android:textStyle="bold"
+        />
+    </LinearLayout>
+</LinearLayout>
