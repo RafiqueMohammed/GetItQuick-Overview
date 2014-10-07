@@ -2,12 +2,14 @@ package overview.getitquick.in.getitquick_overview;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.ImageView;
@@ -63,6 +65,13 @@ GridView mGrid;
         list.add(new GridStruct(R.drawable.watermelon,"Water Melon","Small description","Rs.45"));
 
         mGrid.setAdapter(new gridAdapter(this,list));
+
+        mGrid.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                startActivity(new Intent(Dashboard.this,ProductView.class));
+            }
+        });
     }
 
 class GridStruct{
